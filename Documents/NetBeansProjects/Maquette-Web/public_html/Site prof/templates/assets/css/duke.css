@@ -1,0 +1,250 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 'poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	background: url(../img/bg.jpg) no-repeat center; 
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+}
+.no-padding{
+	padding:0;
+	margin: 0;
+}
+h2 {
+	color: #000;
+	font-size: 40px;
+    text-transform: uppercase;	
+	margin-bottom:20px;
+}
+/**************************** Top navigation***************************************/
+.navbar-wrapper {
+	/*top: 185px;*/
+}
+.container {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.navbar {
+	height:85px;
+	line-height:100px;
+}
+.navbar-inverse {
+	background-color: rgba(0,0,0,0.8);
+}
+.navbar-brand img {
+	max-width: 100%;
+	height: auto !important;
+}
+a.navbar-brand{
+	width: auto;
+}
+.left {
+	float:left;
+}
+h1.left {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(35%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(33%);
+}
+.navbar-inverse .navbar-nav > li > a{
+	font-size: 2em;
+}
+/**************************** Slider *********************************************/
+.carousel {
+	top: 140px;
+	height: 370px;
+	width: 100%;
+	margin:0;
+}
+.carousel-caption {
+	top: 10%;
+}
+.carousel .item {
+	height: 370px;
+}
+.carousel-inner > .item > img {
+	height: 370px;
+	background:#e96cf1;
+  	opacity: 0.5;
+  	filter:alpha(opacity=50); 
+}
+.filter{
+	width: 100%;
+	height: 370px;
+	background-color: rgba(233,108,241,0.4);
+}
+/**************************** player home *********************************************/
+.home_player{
+	height: 46px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/slide-player.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	top: 140px;
+}
+
+/**************************** main content *********************************************/
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    /*justify-content: space-around;*/
+}
+.flex-item {
+    padding: 5px;
+    height: 210px;
+    margin-top: 10px;
+    margin-bottom:60px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+.main{
+	margin-top:40%;
+}
+.blog-vignette{
+	position: absolute;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-vignette img {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-right:auto;
+	margin-left:auto;
+	width: 100%;
+}
+.blog-vignette .bandeau-text { /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+width: 55%;
+position:absolute;
+top:30%;
+}
+.blog-vignette span {
+	color:#fff;
+	font-size: 24px;
+	
+}
+.blog-player {
+	min-height:250px;
+}
+#about {
+	background-color: rgba(0,0,0,0.8);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:3%;
+	display: inline-block;
+}
+#about img {}
+#about .text {
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	color:#fff;
+	width: 60%;
+}
+
+.event {
+    background-color: #000;
+}
+
+/*** Modif texte et couleurs section nos artistes ***/
+.size{
+    color: black;
+    font-size: 20px;
+}
+
+/*** Modif apparence image section nos artistes ***/
+
+.artiste{
+    display: block;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.artiste img {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/*** Modif apparence au survol des images de la section nos artistes ***/
+.artiste:hover{
+    filter:grayscale(100%);
+    transition: 0.5s;
+}
+
+/*** Modif apparence nav pagination section nos artistes ***/
+.pagination > li > a, .pagination > li > span{
+    padding: 15px;
+    background-color: #337ab7;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*** Modif taille, couleur et apparence titre de la section nos artistes ***/
+.title h2{
+    color: white;
+    padding-bottom: 30px;
+    border-bottom: solid 1px white; 
+}
+
+/**************************** footer *********************************************/
+footer {
+	background-color: rgba(0,0,0,0.8);
+	color:#fff;
+
+}
+
+footer .top-footer {
+    opacity: 50%;
+    padding-top:20px;
+    margin-top:15px;
+
+
+}
+footer .bottom-footer {
+        margin-top: 0px;
+        background-color: #000;
+        text-align: center;
+        padding-top: 5px;
+}
+
+.bottom-footer p {
+    margin: 5px;
+}
+
+.sep {
+    margin-right: 5px;
+}
